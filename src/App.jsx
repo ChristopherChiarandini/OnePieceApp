@@ -1,30 +1,27 @@
-import { useState } from 'react'
-
 import './styles/App.css'
+import React from 'react'
 
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './routes/Home'
 import IndexTome from './routes/Tomes'
 import IndexChap from './routes/Chapitres'
-import {createBrowserRouter, RouterProvider } from "react-router-dom"
 
 const router = createBrowserRouter([
-    {
-        path:"/",
-        element: <Home />,
-    },
-    {
-      path:"/Tomes",
-      element: <IndexTome />,
+  {
+    path: '/',
+    element: <Home />,
   },
   {
-    path:"/Chapitres/:tome_id",
+    path: '/Tomes',
+    element: <IndexTome />,
+  },
+  {
+    path: '/Chapitres/:tomeId',
     element: <IndexChap />,
-}
-
+  },
 ])
 
 function App() {
-  
   return (
     <div className="App">
       <RouterProvider router={router} />
