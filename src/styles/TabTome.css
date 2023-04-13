@@ -1,0 +1,25 @@
+li{
+    list-style-type: none;
+}
+
+.infoTome{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border-radius: 15px;
+    max-width: 500px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    background-image: url(../assets/logo-ico.png);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position:  400px -80px;
+    
+}
+
+.infoTome{
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 20px 25px;
+}
