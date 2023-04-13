@@ -12,11 +12,11 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: '/Tomes',
+    path: '/tomes',
     element: <IndexTome />,
   },
   {
-    path: '/Chapitres/:tomeId',
+    path: '/chapitres/:tomeId',
     element: <IndexChap />,
   },
 ])

@@ -8,7 +8,7 @@ export default function Home() {
       <img src={logo} alt="logo one piece"></img>
       <div>Bienvenue dans le monde de One Piece</div>
 
-      <a href="/Tomes">Les Tomes de One Piece</a>
+      <a href="/tomes">Les Tomes de One Piece</a>
     </div>
   )
 }

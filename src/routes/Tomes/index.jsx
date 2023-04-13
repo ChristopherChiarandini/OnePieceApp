@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react'
-import Request from '../../utils/request'
+import request from '../../utils/request'
 import TabTome from './components/TabTome'
 import '../../styles/IndexTomes.css'
 
@@ -8,7 +8,7 @@ export default function IndexTome() {
   const [listTome, setListTome] = useState([])
 
   useEffect(() => {
-    Request('https://api.api-onepiece.com/tomes/').then((bouquin) => {
+    request('https://api.api-onepiece.com/tomes/').then((bouquin) => {
       setListTome(bouquin)
     })
   }, [])

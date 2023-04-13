@@ -5,14 +5,6 @@ import '../../../styles/TabTome.css'
 export default function TabTome({ id, numTome, titreTome, publiFr, publiJp }) {
   const tomeId = id
 
-  TabTome.propTypes = {
-    id: PropTypes.number,
-    numTome: PropTypes.number,
-    titreTome: PropTypes.string,
-    publiFr: PropTypes.string,
-    publiJp: PropTypes.string,
-  }
-
   return (
     <div className="listTome">
       <div className="infoTome">
@@ -26,8 +18,15 @@ export default function TabTome({ id, numTome, titreTome, publiFr, publiJp }) {
             Publication Française : {!publiFr ? 'Non parut en France' : publiFr}
           </li>
         </ul>
-        <a href={`/Chapitres/${tomeId}`}>Voir les Chapitres</a>
+        <a href={`/chapitres/${tomeId}`}>Voir les Chapitres</a>
       </div>
     </div>
   )
+}
+TabTome.propTypes = {
+  id: PropTypes.number,
+  numTome: PropTypes.number,
+  titreTome: PropTypes.string,
+  publiFr: PropTypes.string,
+  publiJp: PropTypes.string,
 }
