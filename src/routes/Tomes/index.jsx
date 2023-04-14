@@ -8,7 +8,7 @@ export default function IndexTome() {
   const [listTome, setListTome] = useState([])
 
   useEffect(() => {
-    request('https://api.api-onepiece.com/tomes/').then((bouquin) => {
+    request('/tomes/').then((bouquin) => {
       setListTome(bouquin)
     })
   }, [])

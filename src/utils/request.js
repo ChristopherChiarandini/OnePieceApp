@@ -1,5 +1,5 @@
 export default function request(url) {
   // Code requête générale par url
-
-  return fetch(url).then((res) => res.json())
+  const baseUrl = import.meta.env.VITE_API_URL_API
+  return fetch(`${baseUrl + url}`).then((res) => res.json())
 }

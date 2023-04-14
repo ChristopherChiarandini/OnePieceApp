@@ -25,7 +25,7 @@ export default function TabTome({ id, numTome, titreTome, publiFr, publiJp }) {
 }
 TabTome.propTypes = {
   id: PropTypes.number,
-  numTome: PropTypes.number,
+  numTome: PropTypes.string,
   titreTome: PropTypes.string,
   publiFr: PropTypes.string,
   publiJp: PropTypes.string,

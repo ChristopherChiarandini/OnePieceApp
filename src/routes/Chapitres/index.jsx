@@ -8,13 +8,11 @@ export default function IndexChap() {
   const { tomeId } = useParams()
 
   useEffect(() => {
-    request(`https://api.api-onepiece.com/chapters/tome/${tomeId}`).then(
-      (elm) => {
-        const filteredChap = elm.filter((item) => item.tome_id === +tomeId)
+    request(`/chapters/tome/${tomeId}`).then((elm) => {
+      const filteredChap = elm.filter((item) => item.tome_id === +tomeId)
 
-        setListChap(filteredChap)
-      },
-    )
+      setListChap(filteredChap)
+    })
   }, [tomeId])
 
   return (
