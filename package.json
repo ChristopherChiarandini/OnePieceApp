@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -18,7 +18,7 @@
   "devDependencies": {
     "@imaginary-cloud/eslint-config-react": "^2.0.1",
     "@imaginary-cloud/prettier-config": "^1.0.0",
-    "@types/react": "^18.0.28",
+    "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
     "eslint": "^8.38.0",
@@ -32,6 +32,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "gh-pages": "^5.0.0",
     "prettier": "^2.8.7",
+    "typescript": "^5.0.4",
     "vite": "^4.2.0"
   },
   "eslintConfig": {
