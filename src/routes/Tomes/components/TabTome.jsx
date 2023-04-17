@@ -19,7 +19,7 @@ export default function TabTome({ id, numTome, titreTome, publiFr, publiJp }) {
             Publication Française : {!publiFr ? 'Non parut en France' : publiFr}
           </li>
         </ul>
-        <Link href={`/chapitres/${tomeId}`}>Voir les Chapitres</Link>
+        <Link to={`/chapitres/${tomeId}`}>Voir les Chapitres</Link>
       </div>
     </div>
   )

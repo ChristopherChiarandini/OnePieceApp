@@ -9,7 +9,7 @@ export default function Home() {
       <div className="box">
         {/* <img src={logo} alt="logo one piece"></img> */}
         <p>Bienvenue dans le monde de One Piece</p>
-        <Link href="/tomes">Les Tomes de One Piece</Link>
+        <Link to="/tomes">Les Tomes de One Piece</Link>
       </div>
       <div></div>
     </div>
