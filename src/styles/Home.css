@@ -1,11 +1,23 @@
+
+
 .container{
-    margin : 20px;
-   
-    background-size: 100%;
+    background-image: url(../assets/one-piece.jpeg);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100%;
-    position: relative;
-    min-height: 850px;
+    position: absolute;
    color: black;
+}
+
+.box{
+    background-color: rgba(0, 0, 0, 0.604);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: rgb(255, 255, 255);
+}
+
+.box p{
+    font-size: 45px;
 }
