@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import '../../../styles/TabTome.css'
+import { Link } from 'react-router-dom'
 
 export default function TabTome({ id, numTome, titreTome, publiFr, publiJp }) {
   const tomeId = id
@@ -18,7 +19,7 @@ export default function TabTome({ id, numTome, titreTome, publiFr, publiJp }) {
             Publication Française : {!publiFr ? 'Non parut en France' : publiFr}
           </li>
         </ul>
-        <a href={`/chapitres/${tomeId}`}>Voir les Chapitres</a>
+        <Link href={`/chapitres/${tomeId}`}>Voir les Chapitres</Link>
       </div>
     </div>
   )
